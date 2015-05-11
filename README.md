@@ -1,4 +1,4 @@
-# tic-tac-toe
+# Tic-Tac-Toe
 
 You will be creating a fully functional Tic-Tac-Toe Game using: Javascript, jQuery, HTML and CSS.
 
@@ -20,7 +20,7 @@ You will be creating a fully functional Tic-Tac-Toe Game using: Javascript, jQue
 
 ## Wireframe Look
 
-<img src="#" alt="Tic Tac Toe game board layout image">
+<img src="https://github.com/Learning-Fuze/tic-tac-toe/blob/assets/images/TTT_wireframe.png?raw=true" alt="Tic Tac Toe game board layout image">
 
 ## Starting: HTML Version
 - Before attempting to create something dynamically with JS, you should make a static HTML version to emulate

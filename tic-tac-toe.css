@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+}
+
+.game_board {}
+
+h1 {
+    text-align: center;
+}
+
+.row_1,
+.row_2,
+.row_3 {
+    list-style: none;
+}
+
+#one,
+#two,
+#three {
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    border: 2px solid;
+    text-align: center;
+}
+
+#four,
+#five,
+#six {
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    border: 2px solid;
+    text-align: center;
+}
+
+#seven,
+#eight,
+#nine {
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    border: 2px solid;
+    text-align: center;
+}
+
+#two,
+#five,
+#eight {
+    margin: 0px -5px;
+}

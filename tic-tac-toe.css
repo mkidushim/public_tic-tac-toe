@@ -1,42 +1,24 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .game_board {
     margin-left: 30px;
 }
 
 h1 {
-    margin-left: 260px;
-    padding-right: 0px;
-    margin-right: 0px;
+    margin-left: 200px;
 }
 
-.row_1,
-.row_2,
-.row_3 {
-    list-style: none;
-}
-
-#one,
-#two,
-#three,
-#four,
-#five,
-#six,
-#seven,
-#eight,
-#nine {
+.box {
     display: inline-block;
-    width: 20%;
-    height: 200px;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    top: 5%;
+    left: 30px;
+    margin-left: 50px;
+    margin-top: 15px;
     border: 2px solid;
     text-align: center;
 }
 
-#two,
-#five,
-#eight {
-    margin: 0px -5px;
+.player_info > div {
+    padding: 10px 0px;
 }

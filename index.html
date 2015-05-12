@@ -2,7 +2,8 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="tic-tac-toe.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -11,30 +12,31 @@
 </head>
 
 <body>
-    <h1>Tic-Tac-Toe</h1>
-    <div class='container'>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
         <div class="row">
-            <div class="container">
+            <div class="col-md-9">
+                <div class="game_board">
                     <div class="row">
-                        <div class="row_1 col-sm-4" id="one">x</div>
-                        <div class="row_1 col-sm-4" id="two">x</div>
-                        <div class="row_1 col-sm-4" id="three">x</div>
+                        <div class="box col-md-4">x</div>
+                        <div class="box col-md-4">x</div>
+                        <div class="box col-md-4">x</div>
                     </div>
                     <div class="row">
-                        <div class="row_2 col-sm-4" id="four">x</div>
-                        <div class="row_2 col-sm-4" id="five">x</div>
-                        <div class="row_2 col-sm-4" id="six">x</div>
+                        <div class="box col-md-4">x</div>
+                        <div class="box col-md-4">x</div>
+                        <div class="box col-md-4">x</div>
                     </div>
                     <div class="row">
-                        <div class="row_3 col-sm-4" id="seven">x</div>
-                        <div class="row_3 col-sm-4" id="eight">x</div>
-                        <div class="row_3 col-sm-4" id="nine">x</div>
+                        <div class="box col-md-4">x</div>
+                        <div class="box col-md-4">x</div>
+                        <div class="box col-md-4">x</div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div>player 1</div>
-                <div>player 2</div>
+            <div class="player_info col-md-3">
+                <div>player 1: O</div>
+                <div>player 2: X</div>
             </div>
         </div>
     </div>

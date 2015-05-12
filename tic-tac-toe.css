@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     padding: 0;
@@ -16,25 +17,34 @@ h1 {
 .row_3 {
     list-style: none;
 }*/
+=======
+.game_board {
+    margin-left: 30px;
+}
 
-#one,
-#two,
-#three,
-#four,
-#five,
-#six,
-#seven,
-#eight,
-#nine {
+h1 {
+    margin-left: 200px;
+}
+>>>>>>> a2fad98bae6e4f8c05d2d0d791cbd4ec7585f854
+
+.box {
     display: inline-block;
+<<<<<<< HEAD
     width: 25%;
     height: 200px;
+=======
+    width: 15%;
+    height: 100px;
+    position: relative;
+    top: 5%;
+    left: 30px;
+    margin-left: 50px;
+    margin-top: 15px;
+>>>>>>> a2fad98bae6e4f8c05d2d0d791cbd4ec7585f854
     border: 2px solid;
     text-align: center;
 }
 
-#two,
-#five,
-#eight {
-    margin: 0px -5px;
+.player_info > div {
+    padding: 10px 0px;
 }

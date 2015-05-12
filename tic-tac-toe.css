@@ -1,13 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    width: 90vw;
 }
 
-.game_board {}
+.game_board {
+    margin-left: 30px;
+}
 
 h1 {
-    text-align: center;
+    margin-left: 260px;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .row_1,
@@ -18,24 +21,10 @@ h1 {
 
 #one,
 #two,
-#three {
-    display: inline-block;
-    width: 20%;
-    height: 200px;
-    border: 2px solid;
-    text-align: center;
-}
-
+#three,
 #four,
 #five,
-#six {
-    display: inline-block;
-    width: 20%;
-    height: 200px;
-    border: 2px solid;
-    text-align: center;
-}
-
+#six,
 #seven,
 #eight,
 #nine {

@@ -5,6 +5,8 @@
 
 h1 {
     margin-left: 200px;
+    font: 400 100px/1.0 'Just Another Hand', Helvetica, sans-serif;
+    color: black;
 }
 
 
@@ -57,3 +59,7 @@ h1 {
     text-align: center
 }
 
+.box_container{
+    font: 400 100px/1.0 'Just Another Hand', Helvetica, sans-serif;
+    color: black;
+}

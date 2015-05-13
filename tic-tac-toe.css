@@ -22,3 +22,15 @@ h1 {
 .player_info > div {
     padding: 10px 0px;
 }
+
+.selected1 {
+    background-color: orange
+}
+
+.selected2 {
+    background-color: green
+}
+
+#game_start {
+    text-align: center
+}

@@ -59,7 +59,17 @@ h1 {
     text-align: center
 }
 
-.box_container{
-    font: 400 100px/1.0 'Just Another Hand', Helvetica, sans-serif;
+#box_container{
+    font: 200 50px/1.0 'Just Another Hand', Helvetica, sans-serif;
     color: black;
+}
+
+#player1{
+    color:orange;
+    border: solid 2px;
+}
+
+#player2{
+    color:green;
+    border: solid 2px;
 }

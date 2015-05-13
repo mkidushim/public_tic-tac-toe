@@ -6,26 +6,23 @@ $(document).ready(function() {
     console.log('assigning click handler to', $('#parent > .row'))
     $('#main_container').on('click', '.box', function() {
 
+
+
         if (player1) {
             $(this).addClass('selected1');
             console.log("button was clicked");
             score_array[$(this).attr('index')] = 'g';
-            console.log(score_array)
-            if ($(this).html() != '') {
-
-                for (var i = 0; i < win_conditions.length; i++) {
-                    if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
-                        console.log('you win!')
-                    }
-
-                }
-            }
-            player1 = !player1;
-        } else {
+            console.log(score_array);
+            $('#player2').removeClass('border');
+            $('#player1').addClass('border');
+            player1 = false;
+        } else if (!player1) {
             $(this).addClass("selected2");
             console.log("button was clicked")
             score_array[$(this).attr('index')] = "o";
-            player1 = !player1;
+            $('#player1').removeClass('border');
+            $('#player2').addClass('border');
+            player1 = true;
         }
     });
 });

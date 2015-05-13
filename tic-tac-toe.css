@@ -7,6 +7,7 @@ h1 {
 }
 
 .box {
+    background-color: black;
     display: inline-block;
     width: 15%;
     height: 100px;

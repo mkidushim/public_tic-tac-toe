@@ -9,6 +9,7 @@ h1 {
 
 
 .box {
+    background-color: black;
     display: inline-block;
     width: 15%;
     height: 100px;
@@ -27,6 +28,7 @@ h1 {
     padding: 10px 0px;
 }
 
+
 .background
 {
     background-image: url('images/linedpaper.jpg');
@@ -40,5 +42,18 @@ h1 {
     background-color: rgb(245, 245, 245);
     position: absolute;
     background-size:100%;
+}
+
+
+.selected1 {
+    background-color: orange
+}
+
+.selected2 {
+    background-color: green
+}
+
+#game_start {
+    text-align: center
 }
 

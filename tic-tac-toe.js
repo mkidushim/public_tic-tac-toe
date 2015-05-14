@@ -30,7 +30,11 @@ $(document).ready(function() {
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
                     console.log('you win!')
-
+                    $('body').append("<div class='modal-fade'>");
+                    $('.modal-fade').append("<div class='modal-dialog'>");
+                    $('.modal-dialog').append("<div class='modal-content'>");
+                    $(".modal-content").append('<div class="modal-header">');
+                    $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player 2 Wins!</div>');
                 }
 
 
@@ -45,6 +49,12 @@ $(document).ready(function() {
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
                     console.log('you win!')
+                    $('body').append("<div class='modal-fade'>");
+                    $('.modal-fade').append("<div class='modal-dialog'>");
+                    $('.modal-dialog').append("<div class='modal-content'>");
+                    $(".modal-content").append('<div class="modal-header">');
+                    $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player 2 Wins!</div>');
+
                 }
 
 

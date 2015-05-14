@@ -81,5 +81,8 @@ h1 {
     position: relative;
     right: 220px;
     bottom: 175px;
+    font: 30px/1.0 'Just Another Hand', Helvetica, sans-serif;
+    text-decoration: underline;
+    line-height: 1.5em;
 }
 }

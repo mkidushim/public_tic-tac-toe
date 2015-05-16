@@ -21,8 +21,8 @@ $(document).ready(function() {
             console.log("button was clicked");
             score_array[$(this).attr('index')] = 'o';
             console.log(score_array);
-            $('#player2').removeClass('border_2');
-            $('#player1').addClass('border_1');
+            $('#player1').removeClass('border_1');
+            $('#player2').addClass('border_2');
             player1 = false;
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
                     $('.modal-fade').append("<div class='modal-dialog'>");
                     $('.modal-dialog').append("<div class='modal-content'>");
                     $(".modal-content").append('<div class="modal-header">');
-                    $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player 2 Wins!</div>');
+                    $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player 1 Wins!</div>');
                     $('.modal-content').append('<div class="modal-footer">');
                     $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                 }
@@ -40,8 +40,8 @@ $(document).ready(function() {
             $(this).addClass("selected2");
             console.log("button was clicked")
             score_array[$(this).attr('index')] = "g";
-            $('#player1').removeClass('border_1');
-            $('#player2').addClass('border_2');
+            $('#player2').removeClass('border_2');
+            $('#player1').addClass('border_1');
             player1 = true;
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {

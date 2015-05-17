@@ -41,7 +41,7 @@ $(document).ready(function() {
                     $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                 }
             }
-        } else if (player2) {
+        } else if (player2 && !player1) {
             $(this).addClass("selected2");
             console.log("button was clicked")
             score_array[$(this).attr('index')] = "g";
@@ -65,8 +65,7 @@ $(document).ready(function() {
     });
 });
 
-function make_board() {
-
+function initialize_game_board() {
     if (click == true) {
         $('#main_container').html("<div id='main_container' class='container'>");
         $('#main_container').append('<h1>Tic-Tac-Toe</h1>');

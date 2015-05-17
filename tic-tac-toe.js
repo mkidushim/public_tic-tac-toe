@@ -79,7 +79,7 @@ function initialize_game_board() {
         $('#parent').append("<div class='row row_3'>");
         $('.row.row_3').append("<div index='6' class='box col-md-4'></div>").append("<div index='7' class='box col-md-4'></div>").append("<div index='8' class='box col-md-4'></div>");
         $('#box_container').append('<div class="player_info col-md-3"></div>');
-        $('.player_info').append('<div id="player1">PLAYER_1: O</div>').append('<div id="player2">PLAYER_2: G</div>');
+        $('.player_info').append('<div id="player1">Player Orange</div>').append('<div id="player2">Player Green</div>');
 
         click = false;
     }

@@ -84,9 +84,26 @@ h1 {
 
 .modal-body {
     text-align: center;
+    text-decoration: underline;
+    line-height: 1.5em;
     position: relative;
+<<<<<<< HEAD
     right: 220px;
     bottom: 175px;
     font: 200 50px/1.0 'Just Another Hand', Helvetica, sans-serif;
+=======
+    right: 240px;
+    bottom: 150px;
+    font-weight: bold;
 }
+
+.modal-content {
+    width: 790px;
+    height: 500px;
+>>>>>>> 07ff3d5e1c5f2d008048be763c4c240914ea8edc
+}
+
+.reset {
+    position: relative;
+    bottom: 7px;
 }

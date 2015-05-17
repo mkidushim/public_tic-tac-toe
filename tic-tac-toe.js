@@ -12,7 +12,8 @@ var win_conditions = [
 var player1 = true;
 var player2 = false;
 var click = true;
-$(document).ready(function() {
+$(document).ready(function() 
+{
     console.log('initiating')
 
     console.log('assigning click handler to', $('#parent > .row'))
@@ -83,6 +84,8 @@ function initialize_game_board() {
 
         click = false;
     }
+
+
 
 
 };

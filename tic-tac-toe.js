@@ -1,4 +1,4 @@
-var score_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8'];
+var score_array = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 var win_conditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -10,12 +10,16 @@ var win_conditions = [
     [6, 4, 2]
 ];
 var player1 = true;
+var player2 = false;
 var click = true;
 $(document).ready(function() {
     console.log('initiating')
-    player1 = true;
+
     console.log('assigning click handler to', $('#parent > .row'))
     $('#main_container').on('click', '.box', function() {
+        if ($(this).hasClass('selected1') || $(this).hasClass('selected2')) {
+            return
+        }
         if (player1) {
             $(this).addClass('selected1');
             console.log("button was clicked");
@@ -24,6 +28,7 @@ $(document).ready(function() {
             $('#player1').removeClass('border_1');
             $('#player2').addClass('border_2');
             player1 = false;
+            player2 = true;
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
                     console.log('you win!')
@@ -36,13 +41,14 @@ $(document).ready(function() {
                     $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                 }
             }
-        } else if (!player1) {
+        } else if (player2) {
             $(this).addClass("selected2");
             console.log("button was clicked")
             score_array[$(this).attr('index')] = "g";
             $('#player2').removeClass('border_2');
             $('#player1').addClass('border_1');
             player1 = true;
+            player2 = false;
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
                     console.log('you win!')

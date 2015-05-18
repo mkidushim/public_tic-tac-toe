@@ -1,3 +1,11 @@
+#start_game {
+    position: relative;
+    left: 200px;
+    top: 350px;
+    height:100px;
+    border-radius: 25px;
+    background-color: #0099FF;
+}
 .game_board {
     margin-left: 50px;
 }

@@ -26,7 +26,11 @@ h1 {
 }
 
 .player_info > div {
-    padding: 25px 0px;
+    padding: 35px 0px;
+    
+}
+.player_info {
+    margin-top: 60px;
 }
 
 .background {
@@ -67,7 +71,7 @@ h1 {
 
 #player1 {
     color: orange;
-    margin-top: 65px;
+    margin-top: 5px;
 }
 
 #player2 {
@@ -87,11 +91,7 @@ h1 {
     text-decoration: underline;
     line-height: 1.5em;
     position: relative;
-<<<<<<< HEAD
-    right: 220px;
-    bottom: 175px;
-    font: 200 50px/1.0 'Just Another Hand', Helvetica, sans-serif;
-=======
+
     right: 240px;
     bottom: 150px;
     font-weight: bold;
@@ -100,7 +100,7 @@ h1 {
 .modal-content {
     width: 790px;
     height: 500px;
->>>>>>> 07ff3d5e1c5f2d008048be763c4c240914ea8edc
+
 }
 
 .reset {

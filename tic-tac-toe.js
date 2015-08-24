@@ -12,8 +12,8 @@ var win_conditions = [
 var player1 = true;
 var player2 = false;
 var click = true;
-$(document).ready(function() 
-{
+var button_click = 0;
+$(document).ready(function() {
     console.log('initiating')
 
     console.log('assigning click handler to', $('#parent > .row'))
@@ -21,9 +21,13 @@ $(document).ready(function()
         if ($(this).hasClass('selected1') || $(this).hasClass('selected2')) {
             return
         }
+        if (button_click === 9) {
+            console.log('cats-game')
+        }
         if (player1) {
             $(this).addClass('selected1');
             console.log("button was clicked");
+            button_click++;
             score_array[$(this).attr('index')] = 'o';
             console.log(score_array);
             $('#player1').removeClass('border_1');
@@ -42,9 +46,20 @@ $(document).ready(function()
                     $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                 }
             }
+            if (button_click === 9) {
+                $('body').append("<div class='modal-fade'>");
+                $('.modal-fade').append("<div class='modal-dialog'>");
+                $('.modal-dialog').append("<div class='modal-content'>");
+                $(".modal-content").append('<div class="modal-header">');
+                $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Cats Game!</div>');
+                $('.modal-content').append('<div class="modal-footer">');
+                $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
+                console.log('cats-game')
+            }
         } else if (player2 && !player1) {
             $(this).addClass("selected2");
             console.log("button was clicked")
+            button_click++;
             score_array[$(this).attr('index')] = "g";
             $('#player2').removeClass('border_2');
             $('#player1').addClass('border_1');
@@ -60,9 +75,20 @@ $(document).ready(function()
                     $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player \'X\' Wins!</div>');
                     $('.modal-content').append('<div class="modal-footer">');
                     $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
-                }
+                } 
             }
+            if (button_click === 9) {
+                    $('body').append("<div class='modal-fade'>");
+                    $('.modal-fade').append("<div class='modal-dialog'>");
+                    $('.modal-dialog').append("<div class='modal-content'>");
+                    $(".modal-content").append('<div class="modal-header">');
+                    $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Cats Game!</div>');
+                    $('.modal-content').append('<div class="modal-footer">');
+                    $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
+                    console.log('cats-game')
+                }
         }
+
     });
 });
 
@@ -92,6 +118,7 @@ function initialize_game_board() {
 
 
 function reset() {
+    button_click = 0;
     $('.modal-fade').remove();
     $('.box').removeClass('selected1').removeClass('selected2');
     score_array = ['0', '1', '2', '3', '4', '5', '6', '7', '8'];

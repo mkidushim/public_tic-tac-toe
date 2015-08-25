@@ -16,7 +16,9 @@ var button_click = 0;
 var over = false;
 $(document).ready(function() {
     console.log('initiating')
-
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
     console.log('assigning click handler to', $('#parent > .row'))
     $('#main_container').on('click', '.box', function() {
         if (over == true){
@@ -41,24 +43,28 @@ $(document).ready(function() {
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
                     console.log('you win!')
-                    $('body').append("<div class='modal-fade'>");
-                    $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
-                    $('.modal-dialog').append("<div class='modal-content'>");
-                    $(".modal-content").append('<div class="modal-header">');
-                    $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player \'O\' Wins!</div>');
-                    $('.modal-content').append('<div class="modal-footer">');
-                    $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
+                    $('.modal-body p').html('Player \'O\' Wins!');
+                    $("#myModal").modal();
+                    // $('body').append("<div class='modal-fade'>");
+                    // $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
+                    // $('.modal-dialog').append("<div class='modal-content'>");
+                    // $(".modal-content").append('<div class="modal-header">');
+                    // $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player \'O\' Wins!</div>');
+                    // $('.modal-content').append('<div class="modal-footer">');
+                    // $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                     over = true;
                 }
             }
             if (button_click === 9) {
-                $('body').append("<div class='modal-fade'>");
-                $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
-                $('.modal-dialog').append("<div class='modal-content'>");
-                $(".modal-content").append('<div class="modal-header">');
-                $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Cats Game!</div>');
-                $('.modal-content').append('<div class="modal-footer">');
-                $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
+                $('.modal-body p').html('Cats Game!');
+                $("#myModal").modal();
+                // $('body').append("<div class='modal-fade'>");
+                // $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
+                // $('.modal-dialog').append("<div class='modal-content'>");
+                // $(".modal-content").append('<div class="modal-header">');
+                // $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Cats Game!</div>');
+                // $('.modal-content').append('<div class="modal-footer">');
+                // $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                 console.log('cats-game')
                 over = true;
             }
@@ -74,24 +80,28 @@ $(document).ready(function() {
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
                     console.log('you win!')
-                    $('body').append("<div class='modal-fade'>");
-                    $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
-                    $('.modal-dialog').append("<div class='modal-content'>");
-                    $(".modal-content").append('<div class="modal-header">');
-                    $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player \'X\' Wins!</div>');
-                    $('.modal-content').append('<div class="modal-footer">');
-                    $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
+                    $('.modal-body p').html('Player \'X\' Wins!');
+                    $("#myModal").modal();
+                    // $('body').append("<div class='modal-fade'>");
+                    // $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
+                    // $('.modal-dialog').append("<div class='modal-content'>");
+                    // $(".modal-content").append('<div class="modal-header">');
+                    // $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player \'X\' Wins!</div>');
+                    // $('.modal-content').append('<div class="modal-footer">');
+                    // $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                     over = true;
                 } 
             }
             if (button_click === 9) {
-                    $('body').append("<div class='modal-fade'>");
-                    $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
-                    $('.modal-dialog').append("<div class='modal-content'>");
-                    $(".modal-content").append('<div class="modal-header">');
-                    $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Cats Game!</div>');
-                    $('.modal-content').append('<div class="modal-footer">');
-                    $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
+                    $('.modal-body p').html('Cats Game!');
+                    $("#myModal").modal();
+                    // $('body').append("<div class='modal-fade'>");
+                    // $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
+                    // $('.modal-dialog').append("<div class='modal-content'>");
+                    // $(".modal-content").append('<div class="modal-header">');
+                    // $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Cats Game!</div>');
+                    // $('.modal-content').append('<div class="modal-footer">');
+                    // $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                     console.log('cats-game')
                     over = true;
                 }

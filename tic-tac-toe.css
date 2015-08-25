@@ -111,17 +111,10 @@ h1 {
     text-decoration: underline;
     line-height: 1.5em;
     position: relative;
-
-    right: 240px;
-    bottom: 150px;
     font-weight: bold;
 }
 
-.modal-content {
-    width: 790px;
-    height: 500px;
 
-}
 
 .reset {
     position: relative;

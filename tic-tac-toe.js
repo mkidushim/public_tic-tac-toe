@@ -94,6 +94,7 @@ $(document).ready(function() {
             }
             if (button_click === 9) {
                     $('.modal-body p').html('Cats Game!');
+                    $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                     $("#myModal").modal();
                     // $('body').append("<div class='modal-fade'>");
                     // $('.modal-fade').append("<div class='modal-dialog modal-sm'>");

@@ -34,15 +34,15 @@ $(document).ready(function() {
             button_click++;
             score_array[$(this).attr('index')] = 'o';
             console.log(score_array);
-            $('#player1').toggleClass('border_1');
-            $('#player2').toggleClass('border_2');
+            $('#player1').removeClass('border_1');
+            $('#player2').addClass('border_2');
             player1 = false;
             player2 = true;
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
                     console.log('you win!')
                     $('body').append("<div class='modal-fade'>");
-                    $('.modal-fade').append("<div class='modal-dialog'>");
+                    $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
                     $('.modal-dialog').append("<div class='modal-content'>");
                     $(".modal-content").append('<div class="modal-header">');
                     $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player \'O\' Wins!</div>');
@@ -53,7 +53,7 @@ $(document).ready(function() {
             }
             if (button_click === 9) {
                 $('body').append("<div class='modal-fade'>");
-                $('.modal-fade').append("<div class='modal-dialog'>");
+                $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
                 $('.modal-dialog').append("<div class='modal-content'>");
                 $(".modal-content").append('<div class="modal-header">');
                 $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Cats Game!</div>');
@@ -67,15 +67,15 @@ $(document).ready(function() {
             console.log("button was clicked")
             button_click++;
             score_array[$(this).attr('index')] = "g";
-            $('#player2').toggleClass('border_2');
-            $('#player1').toggleClass('border_1');
+            $('#player2').removeClass('border_2');
+            $('#player1').addClass('border_1');
             player1 = true;
             player2 = false;
             for (var i = 0; i < win_conditions.length; i++) {
                 if (score_array[win_conditions[i][0]] == score_array[win_conditions[i][1]] && score_array[win_conditions[i][1]] == score_array[win_conditions[i][2]]) {
                     console.log('you win!')
                     $('body').append("<div class='modal-fade'>");
-                    $('.modal-fade').append("<div class='modal-dialog'>");
+                    $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
                     $('.modal-dialog').append("<div class='modal-content'>");
                     $(".modal-content").append('<div class="modal-header">');
                     $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Player \'X\' Wins!</div>');
@@ -86,7 +86,7 @@ $(document).ready(function() {
             }
             if (button_click === 9) {
                     $('body').append("<div class='modal-fade'>");
-                    $('.modal-fade').append("<div class='modal-dialog'>");
+                    $('.modal-fade').append("<div class='modal-dialog modal-sm'>");
                     $('.modal-dialog').append("<div class='modal-content'>");
                     $(".modal-content").append('<div class="modal-header">');
                     $('.modal-header').append('<div class="modal-body">Thank you for playing Keith and Mike\'s Tic-Tac-Toe, Cats Game!</div>');
@@ -114,7 +114,7 @@ function initialize_game_board() {
         $('#parent').append("<div class='row row_3'>");
         $('.row.row_3').append("<div index='6' class='box col-md-4'></div>").append("<div index='7' class='box col-md-4'></div>").append("<div index='8' class='box col-md-4'></div>");
         $('#box_container').append('<div class="player_info col-md-4 col-sm-4"></div>');
-        $('.player_info').append('<div id="player1">Player \'O\'</div>').append('<div id="player2">Player \'X\'</div>');
+        $('.player_info').append('<div id="player1" class="border_1">Player \'O\'</div>').append('<div id="player2">Player \'X\'</div>');
 
         click = false;
     }

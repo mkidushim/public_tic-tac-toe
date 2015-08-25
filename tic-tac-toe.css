@@ -43,11 +43,11 @@ h1 {
 }
 
 .player_info > div {
-    padding: 35px 0px;
+    padding: 10px 0px;
     
 }
 .player_info {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .background {
@@ -90,18 +90,20 @@ h1 {
 #player1 {
     color: orange;
     margin-top: 5px;
+    padding: 5px;
 }
 
 #player2 {
     color: green;
+    padding: 5px;
 }
 
 .border_1 {
-    text-decoration: underline;
+    border: 4px solid;
 }
 
 .border_2 {
-    text-decoration: underline;
+    border: 4px solid;
 }
 
 .modal-body {

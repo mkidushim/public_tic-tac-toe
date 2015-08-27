@@ -53,6 +53,7 @@ $(document).ready(function() {
                     // $('.modal-content').append('<div class="modal-footer">');
                     // $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                     over = true;
+                    return
                 }
             }
             if (button_click === 9) {
@@ -90,6 +91,7 @@ $(document).ready(function() {
                     // $('.modal-content').append('<div class="modal-footer">');
                     // $('.modal-footer').append("<button class='reset' onclick='reset();make_board;'>Reset</button>")
                     over = true;
+                    return
                 } 
             }
             if (button_click === 9) {

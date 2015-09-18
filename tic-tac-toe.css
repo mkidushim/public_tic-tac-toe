@@ -20,9 +20,9 @@
 }
 
 h1 {
-    margin-left: 170px;
     position: relative;
-    bottom: 15px;
+    left: 225px;
+    top:20px;
     font: 400 100px/1.0 'Just Another Hand', Helvetica, sans-serif;
     color: black;
 }
@@ -47,7 +47,7 @@ h1 {
     
 }
 .player_info {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .background {
@@ -67,15 +67,17 @@ h1 {
 .selected1 {
     
     background-image: url('images/orangeo.png');
-    background-size: 100%;
+    background-size: 75%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .selected2 {
     
     background-image: url('images/greenx.png');
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
 }
 
 #game_start {
